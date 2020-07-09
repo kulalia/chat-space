@@ -1,0 +1,32 @@
+.chat-main
+  .chat-main__group-info
+    .chat-main__group-name
+      techcamp
+      .chat-main__group-member
+        Member : test
+    =link_to "#", class:"chat-main__group-edit" do
+      Edit
+  .chat-main__message-list
+    .chat-main__message-content
+      .chat-main__message-name
+        test
+        .chat-main__message-name--date
+          2020/7/7(wed) 0:10:03
+      .chat-main__message
+        こんばんは
+    .chat-main__message-content
+      .chat-main__message-name
+        test
+        .chat-main__message-name--date
+          2020/7/7(wed) 0:10:03
+      .chat-main__message
+        こんばんは!!
+
+  .chat-main__message-form
+    %form.chat-main__message-formbox
+      .input-box
+        %input{type: "text", placeholder: "type a message", class: "chat-main__message-formbox--text"}
+        %label{class: "input-box__image"}
+          = icon("fa", "image", class: "input-box__image--icon")
+          %input{type: "file", class: "input-box__file"}
+      %input{type: "submit", value: "Send", class: "chat-main__send-message--btn"}
