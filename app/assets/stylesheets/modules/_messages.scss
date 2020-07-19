@@ -64,7 +64,7 @@ $top-items-height: 20px;
 
   }
 }
-$chat-main-width: calc(100vw - 300px);
+$chat-main-width: 100vw;
 .chat-main{
   height: calc(100vh - 190px);
   width: $chat-main-width;
@@ -139,40 +139,24 @@ $chat-main-width: calc(100vw - 300px);
     width: $chat-main-width;
     background-color: #d2d2d2;
   }
-  &__message-formbox{
-    padding: 20px 40px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    &--text{
-      height: 50px;
-      width: 100%;
-      padding: 0 40px 0 10px;
-      color: #434a54;
-      border-style:none;
-    }
-  }
-  &__send-message{
-    &--btn{
-      width: 100px;
-      height: 50px;
-      background-color: #38aef0;
-      color: white;
-      cursor: pointer;
-      margin-left: 30px;
-      padding: 0 30px;
-    }
-  }
 }
 
 .input-box{
-  position: relative;
-  width: calc(100vw - 100px);
-  margin-right: 15px;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 40px 20px 40px;
+
+  &__text{
+    height: 50px;
+    width: 50%;
+    color: #434a54;
+    border-style:none;
+  }
+
   &__image{
     height: 50px;
     line-height: 50px;
-    position: absolute;
     cursor: pointer;
     background-color: white;
     padding-right: 10px;
@@ -182,5 +166,14 @@ $chat-main-width: calc(100vw - 300px);
   }
   &__file{
     display: none;
+  }
+  &__btn{
+    width: 100px;
+    height: 50px;
+    background-color: #38aef0;
+    color: white;
+    cursor: pointer;
+    margin-left: 30px;
+    padding: 0 30px;
   }
 }
