@@ -64,6 +64,7 @@ $top-items-height: 20px;
 
   }
 }
+
 $chat-main-width: 100vw;
 .chat-main{
   height: calc(100vh - 190px);
@@ -111,6 +112,7 @@ $chat-main-width: 100vw;
     height: calc(100vh - 190px);
     width: $chat-main-width;
     padding-top: 35px;
+    overflow: scroll;
   }
   &__message-content{
     margin: 0 auto;
