@@ -63,5 +63,8 @@ gem 'factory_bot_rails'
 gem 'rails-controller-testing'
 gem 'faker', "~> 2.8"
 
+group :production do
+  gem 'unicorn', '5.4.1'
+end
 group :test do
 end
